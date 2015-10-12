@@ -29,7 +29,7 @@ public class FetchAndParse {
         //Log.i("fetchJsonArray", "ViewType is: " + AppConstant.VIEW_TYPE);
         //Log.i("fetchJsonArray", "time is 30 seconds? Yes ");
 
-        final String url= "https://api.dribbble.com/v1/shots?sort=recent&access_token=d40cff3dab6677286b8fb77fba2232eab7e60e76c591eb78043e1c65be564c8e";
+        final String url= "https://api.dribbble.com/v1/shots?sort=recent&access_token=";
 
         JsonArrayRequest request= new JsonArrayRequest(
                 url,

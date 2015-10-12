@@ -27,16 +27,16 @@ public class NewsRandomAdapter extends RecyclerView.Adapter<NewsRandomAdapter.Ne
     private List<NewsItem> mNewsItems;
     private List<Integer> mHeights;
 
-
     public NewsRandomAdapter(List<NewsItem> newsItems){
     // constructor
         mNewsItems= newsItems;
         mImageLoader= VolleyHelper.getInstance().getImageLoader();
+        getRandomHeight();
     }
 
     public void getRandomHeight(){
         mHeights = new ArrayList<>();
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < 12 ; i++) {
             mHeights.add((int)(250 + Math.random()*500));
         }
     }
@@ -68,18 +68,18 @@ public class NewsRandomAdapter extends RecyclerView.Adapter<NewsRandomAdapter.Ne
         View itemView= LayoutInflater.from( parent.getContext() )
                 .inflate(R.layout.news_item_random, parent, false);
 
-        getRandomHeight();
         return new NewsRandomHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder( NewsRandomHolder holder, int position) {
         Log.i(TAG, "onBindViewHolder");
+
         // setup layout
         ViewGroup.LayoutParams params= holder.itemView.getLayoutParams();
         params.height=  mHeights.get(position);
-
         holder.mCardView.setLayoutParams(params);
+
         // get  data
         NewsItem item= mNewsItems.get(position);
         holder.bindNewsItem(item);
