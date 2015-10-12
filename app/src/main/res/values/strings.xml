@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ViaCom</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- activity-->
+    <string name="activity_splash">Splash Activity</string>
+    <string name="activity_news">News Activity</string>
+    <!-- fragment -->
+    <string name="fragment_news_swipe">Swipe Mode </string>
+    <string name="fragment_news_primary">Primary Mode </string>
+
+    <string name="news_title_left">Left News Title</string>
+    <string name="news_title_right">Right News Title</string>
+
+    <!-- checkBox -->
+    <string name="checkbox_switch_mode">Swipe Mode</string>
+
+</resources>
