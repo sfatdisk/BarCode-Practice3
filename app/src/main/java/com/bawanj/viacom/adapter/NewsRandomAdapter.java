@@ -37,7 +37,7 @@ public class NewsRandomAdapter extends RecyclerView.Adapter<NewsRandomAdapter.Ne
     public void getRandomHeight(){
         mHeights = new ArrayList<>();
         for (int i = 0; i < 12 ; i++) {
-            mHeights.add((int)(250 + Math.random()*500));
+            mHeights.add((int)(450 + Math.random()*500));
         }
     }
 
